@@ -13,13 +13,16 @@
             android:layout_width="match_parent"
             android:layout_height="362dp"
             android:background="@drawable/img_main_background"
+            android:backgroundTintMode="src_atop"
+            android:backgroundTint="#80D9D9D9"
             android:orientation="vertical"
+
             android:padding="24dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical">
+                >
 
                 <ImageView
                     android:layout_width="24dp"
@@ -37,27 +40,40 @@
                     android:src="@drawable/img_profile" />
 
             </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingTop="24dp"
-                android:paddingBottom="24dp">
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TRG"
                     android:textSize="48sp"
-                    android:textStyle="bold" />
+                    android:textColor="#0A1C30"
+
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#0A1C30"
+                    android:textSize="20sp"
                     android:text="여행 가기 전에 둘러보세요!" />
             </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -108,16 +124,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="여기는 어때요?"
+                    android:textColor="#0A1C30"
+
                     android:textSize="20sp"
                     android:textStyle="bold" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
+
                     <ImageView
                         android:layout_width="120dp"
+                        android:scaleType="fitCenter"
                         android:layout_height="169dp"
                         android:src="@drawable/img_profile" />
                 </LinearLayout>
@@ -136,6 +157,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="가장 인기있는 장소"
+                    android:textColor="#0A1C30"
+
                     android:textSize="20sp"
                     android:textStyle="bold"/>
             </LinearLayout>
