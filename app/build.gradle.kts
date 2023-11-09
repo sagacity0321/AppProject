@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.appproject"
-    compileSdk = 33
+    compileSdk = 34
 
     dataBinding{
         enable = true
@@ -42,11 +42,11 @@ android {
 dependencies {
 
     //noinspection GradleCompatible
-    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
-    implementation ("com.github.bumptech.glide:glide:4.5.0")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
