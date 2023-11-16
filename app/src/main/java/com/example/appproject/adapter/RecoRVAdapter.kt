@@ -1,7 +1,9 @@
 package com.example.appproject.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.inflate
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -12,9 +14,11 @@ import com.example.appproject.R
 import com.example.appproject.datas.RecoData
 
 class RecoRVAdapter(
-    val recoList: ArrayList<RecoData>
+    val recoList: ArrayList<RecoData>,
 ) : RecyclerView.Adapter<RecoRVAdapter.ViewHolder>(
 ) {
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecoRVAdapter.ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.reco_list_main_rv, parent, false)
